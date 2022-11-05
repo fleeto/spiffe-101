@@ -1,16 +1,16 @@
 #!/bin/sh
 
-source 00-clean.sh
+./00-clean.sh
 
 set -x
 
-source 01-spire-server.sh
+./01-spire-server.sh
 
-source 02-spire-agents.sh
+./02-spire-agents.sh
 
 sleep 5
 
-source 03-ghostunnel.sh
+./03-ghostunnel.sh
 
 echo "Creating entry for client"
 spire-server entry create \
