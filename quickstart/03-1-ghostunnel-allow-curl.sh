@@ -1,5 +1,5 @@
 #!/bin/sh
-BIN="/opt/homebrew/bin/ghostunnel"
+BIN=`which ghostunnel`
 echo "Creating entry for ${BIN}"
 spire-server entry create \
     -selector "unix:path:${BIN}" \
